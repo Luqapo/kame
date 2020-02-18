@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.movement {
+  display: flex;
+  width: 100vw;
+  height: 44vh;
+}
+
+.functions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 44vh;
+}
+
+.items {
+  width: 25%;
+  height: 50%;
+  background-color: gray;
+}
+
+.upDown {
+  width: 45vw;
+}
+
+.up {
+  width: 100%;
+  height: 50%;
+  background-color: green;
+}
+
+.side {
+  width: 25%;
+  height: 100%;
+  background-color: rgb(31, 138, 209);
+}
+
+h1 {
+  text-align: center;
+  width: 100vw;
+}
+
+button {
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.6rem;
+}
