@@ -1,0 +1,23 @@
+#include <Arduino.h>
+#define BLUELED 16
+#define SECONDLED  2
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  pinMode(BLUELED, OUTPUT);
+  pinMode(SECONDLED, OUTPUT);
+  Serial.println("Start");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(BLUELED, HIGH);
+  digitalWrite(SECONDLED, LOW);
+  Serial.println("Light ON");
+  delay(1000);
+  digitalWrite(BLUELED, LOW);
+  digitalWrite(SECONDLED, HIGH);
+  Serial.println("Light OFF");
+  delay(1000);
+}
