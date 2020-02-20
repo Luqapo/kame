@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 .box {
@@ -16,6 +22,7 @@
 }
 
 .functions {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
@@ -29,7 +36,7 @@
 }
 
 .upDown {
-  width: 45vw;
+  width: 50vw;
 }
 
 .up {
@@ -50,8 +57,38 @@ h1 {
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 30px;
   text-transform: uppercase;
   color: white;
   font-size: 1.6rem;
+}
+
+.functions>button {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+#stop {
+  background-color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f44336;
+  border: 2px solid #f44336;
+}
+
+#forward {
+  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.movement>button {
+  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #008CBA;
+  border: 2px solid #008CBA;
 }

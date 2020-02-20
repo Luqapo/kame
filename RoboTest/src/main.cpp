@@ -3,8 +3,8 @@
 #include <WiFiClient.h>
 
 // Wifi Access Point configuration
-char *ssid = "ESP8266"; // The name of the Wi-Fi network that will be created
-char *password = "kame";   // The password required to connect to it, leave blank for an open network
+const char* ssid = "ESP8266"; // The name of the Wi-Fi network that will be created
+const char* password = "kame";   // The password required to connect to it, leave blank for an open network
 void parseData(String data);
 
 WiFiServer server(80);
@@ -17,15 +17,10 @@ void setup() {
     WiFi.disconnect();
     delay(100);
 
-    WiFi.softAP("ESP8266");
+    WiFi.softAP(ssid, password);
     server.begin();
     Serial.begin(115200);
     Serial.print(WiFi.status());
-    // int i = 0;
-    // while (WiFi.status() != WL_CONNECTED) { // Wait for the Wi-Fi to connect
-    //     delay(1000);
-    //     Serial.print(++i); Serial.print(' ');
-    // }
     delay(1000);
 }
 
