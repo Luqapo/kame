@@ -8,7 +8,7 @@ client.on('error', (err) => {
 });
 
 function init() {
-  return client.connect(80, '192.168.4.1');
+  return client.connect(6969, '192.168.4.1');
 }
 
 function write(val) {
